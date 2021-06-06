@@ -1,0 +1,390 @@
+// Colors
+$colorRed: #ed1c24;
+$colorBackground: #e5e5e5;
+$colorHoverGreen: #266150;
+
+// Fonts
+$fontRoboto: "Roboto", sans-serif;
+$fontPoppins: "Poppins", sans-serif;
+$fontTangerine: "Playball", cursive;
+
+// Animations
+$Transition: 0.4s ease-in-out;
+
+body {
+  font-family: $fontPoppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  overflow-x: hidden;
+}
+
+.Logo {
+  line-height: 0;
+  text-align: center;
+  font-size: 15px;
+  span {
+    font-family: $fontTangerine;
+  }
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Btn {
+  cursor: pointer;
+  background: $colorRed;
+  border: none;
+  color: white;
+}
+.covid-alert {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 12px;
+  .btn-download {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: $Transition;
+  }
+  .btn-close {
+    cursor: pointer;
+    transition: $Transition;
+  }
+  .btn-download:hover,
+  .btn-close:hover {
+    color: $colorRed;
+  }
+}
+
+.Nav-Main {
+  background: $colorBackground;
+  padding-bottom: 600px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    ul {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      a {
+        color: black;
+        text-decoration: none;
+        transition: $Transition;
+      }
+      .Line {
+        width: 1px;
+        height: 15px;
+        background: black;
+      }
+      .Login {
+        cursor: pointer;
+        transition: $Transition;
+      }
+      a:hover,
+      .Login:hover {
+        color: $colorRed;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  main {
+    text-align: center;
+    padding-bottom: 120px;
+    .Wraper {
+      position: absolute;
+      top: 30%;
+      right: 0;
+      overflow: hidden;
+      .Dots-Img {
+        position: relative;
+        left: 20%;
+        z-index: 0;
+        opacity: 30%;
+        border-radius: 50%;
+        width: 584px;
+        height: 584px;
+        animation: Animation3 25s infinite ease-in-out;
+      }
+      @keyframes Animation3 {
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+    }
+    .Scrooll-Down {
+      position: absolute;
+      top: 548px;
+      left: 100px;
+      h3 {
+        writing-mode: vertical-rl;
+        padding-top: 20px;
+        transform: rotate(180deg);
+        font-size: 8px;
+        letter-spacing: 2px;
+      }
+    }
+    .Btn-Absolute {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      position: fixed;
+      top: 500px;
+      right: 100px;
+      font-size: 12px;
+      transition: $Transition;
+      z-index: 10;
+    }
+    .Btn-Absolute:hover {
+      background-color: $colorHoverGreen;
+      transform: rotateZ(360deg);
+    }
+    header {
+      padding-bottom: 100px;
+      position: relative;
+      z-index: 1;
+      h2 {
+        color: $colorRed;
+        font-size: 90px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+
+    .Main-Info {
+      display: flex;
+      justify-content: space-evenly;
+      background: white;
+      width: 70%;
+      margin: auto;
+      padding: 50px;
+      position: relative;
+      z-index: 1;
+      .Info-Primary {
+        h2 {
+          font-size: 56px;
+          line-height: 20px;
+          align-items: center;
+          justify-content: center;
+          text-align: start;
+        }
+        .Info-Primary-Red {
+          color: $colorRed;
+        }
+        img {
+          position: absolute;
+          width: 50%;
+          top: 250px;
+          left: -80px;
+        }
+      }
+      .Info-Secondary {
+        width: 400px;
+        text-align: start;
+        .Info-Secondary-Info-Link {
+          display: flex;
+          line-height: 10px;
+          align-items: center;
+          gap: 40px;
+          font-size: 18px;
+          button {
+            background: $colorRed;
+            width: 45px;
+            height: 45px;
+            color: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: $Transition;
+            img {
+              animation: Animation2 1.4s infinite ease-in-out;
+            }
+            @keyframes Animation2 {
+              0% {
+                transform: translateX(-6px);
+              }
+              50% {
+                transform: translateX(6px);
+              }
+              100% {
+                transform: translateX(-5px);
+              }
+            }
+          }
+          button:hover {
+            background: $colorHoverGreen;
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  margin: auto;
+  text-align: center;
+  line-height: 20px;
+  padding: 50px 0;
+  h2 {
+    font-size: 56px;
+  }
+  button {
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: $Transition;
+    animation: Animation1 2s infinite ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  }
+  button:hover {
+    background: $colorHoverGreen;
+  }
+
+  @keyframes Animation1 {
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+footer {
+  background: $colorRed;
+  color: white;
+  font-size: 14px;
+  .Footer-Primary {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    .Footer-Primary-Logo-Input {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 80px;
+      Form {
+        display: flex;
+        height: 50px;
+        input {
+          border: 1px solid white;
+          color: white;
+          width: 250px;
+          outline: none;
+          background: rgba(255, 255, 255, 0.3);
+          padding-left: 20px;
+        }
+        input::placeholder {
+          color: white;
+          padding-left: 10px;
+        }
+        button {
+          font-size: 14px;
+          border: 1px solid white;
+          border-left: none;
+          color: white;
+          width: 100px;
+          background: rgba(255, 255, 255, 0.3);
+          cursor: pointer;
+          transition: $Transition;
+        }
+        button:hover {
+          background-color: lighten($color: #999999, $amount: 100);
+          color: black;
+        }
+      }
+    }
+    .Footer-Primary-Location-Links {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      .Footer-Primary-Location-Contact-Icon {
+        display: flex;
+        gap: 10px;
+        i {
+          padding-top: 7px;
+        }
+        .Footer-Primary-Location-Contact {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .Footer-Primary-Links-Social {
+      display: flex;
+      width: 350px;
+      justify-content: space-between;
+      p {
+        margin: 0 0 20px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+          text-decoration: none;
+          color: white;
+          transition: $Transition;
+        }
+        a:hover {
+          color: $colorHoverGreen;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        li {
+          padding-bottom: 5px;
+        }
+      }
+      .Footer-Primary-Heading-Social {
+        text-align: center;
+        .Footer-Primary-Social {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 15px;
+          a {
+            color: white;
+            transition: $Transition;
+          }
+          a:hover {
+            color: $colorHoverGreen;
+          }
+        }
+      }
+    }
+  }
+  .Footer-Secondary {
+    .Line {
+      height: 1px;
+      background: white;
+      width: 80%;
+      margin: auto;
+    }
+    .Footer-Secondary-Last {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 40px 0;
+      div {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+      }
+    }
+  }
+}

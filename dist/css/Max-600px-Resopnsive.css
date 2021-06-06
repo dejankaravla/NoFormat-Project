@@ -1,0 +1,97 @@
+.covid-alert {
+  font-size: 8px; }
+
+.Logo {
+  font-size: 10px; }
+
+.Nav-Main nav {
+  padding-top: 40px; }
+  .Nav-Main nav .Logo {
+    padding-bottom: 10px; }
+  .Nav-Main nav ul {
+    gap: 10px;
+    font-size: 10px;
+    padding: 0;
+    flex-direction: column;
+    text-decoration: underline; }
+    .Nav-Main nav ul .Line {
+      display: none; }
+
+.Nav-Main main .Wraper {
+  top: 50%; }
+  .Nav-Main main .Wraper .Dots-Img {
+    left: 50%; }
+
+.Nav-Main main .Btn-Absolute {
+  width: 50px;
+  height: 50px;
+  font-size: 10px; }
+
+.Nav-Main main header {
+  padding-bottom: 50px; }
+  .Nav-Main main header h2 {
+    font-size: 30px; }
+  .Nav-Main main header p {
+    font-size: 15px; }
+
+.Nav-Main main .Main-Info {
+  padding: 20px 0;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column; }
+  .Nav-Main main .Main-Info .Info-Primary h2 {
+    font-size: 20px;
+    text-align: center; }
+  .Nav-Main main .Main-Info .Info-Primary img {
+    position: static; }
+  .Nav-Main main .Main-Info .Info-Secondary {
+    width: 90%;
+    padding: 0 0px;
+    text-align: justify;
+    margin: auto;
+    font-size: 10px; }
+    .Nav-Main main .Main-Info .Info-Secondary .Info-Secondary-Info-Link {
+      line-height: 20px;
+      justify-content: center;
+      font-size: 15px;
+      line-height: 10px; }
+      .Nav-Main main .Main-Info .Info-Secondary .Info-Secondary-Info-Link button {
+        height: 30px; }
+
+section p {
+  font-size: 10px; }
+
+section h2 {
+  font-size: 20px; }
+
+section button {
+  font-size: 8px;
+  padding: 10px 20px; }
+
+footer {
+  font-size: 11px; }
+  footer .Footer-Primary {
+    padding: 30px 0; }
+    footer .Footer-Primary .Footer-Primary-Logo-Input {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 30px; }
+      footer .Footer-Primary .Footer-Primary-Logo-Input form input {
+        width: 150px;
+        font-size: 10px; }
+      footer .Footer-Primary .Footer-Primary-Logo-Input form input::placeholder {
+        font-size: 10px;
+        padding-left: 0px; }
+      footer .Footer-Primary .Footer-Primary-Logo-Input form button {
+        width: 50px;
+        font-size: 10px; }
+    footer .Footer-Primary .Footer-Primary-Location-Links {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px; }
+
+.Footer-Secondary .Footer-Secondary-Last {
+  flex-direction: column;
+  flex-flow: column-reverse;
+  gap: 10px; }

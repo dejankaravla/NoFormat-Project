@@ -1,0 +1,77 @@
+.Nav-Main {
+  padding-bottom: 0px;
+  nav {
+    flex-direction: column;
+    .Logo {
+      font-size: 10px;
+    }
+    ul {
+      font-size: 10px;
+      justify-content: center;
+    }
+  }
+  main {
+    padding-bottom: 50px;
+    .Scrooll-Down {
+      display: none;
+    }
+    header {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .Main-Info {
+      .Info-Primary {
+        h2 {
+          font-size: 25px;
+        }
+      }
+      .Info-Secondary {
+        width: 280px;
+      }
+    }
+  }
+}
+section {
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  button {
+    font-size: 9px;
+    padding: 13px 25px;
+  }
+}
+footer {
+  .Footer-Primary {
+    width: 100%;
+    .Footer-Primary-Logo-Input {
+      justify-content: space-around;
+    }
+    .Footer-Primary-Location-Links {
+      justify-content: space-around;
+    }
+    .Footer-Primary-Links-Social {
+      justify-content: space-around;
+    }
+  }
+  .Footer-Secondary {
+    font-size: 10px;
+    .Footer-Secondary-Last {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px 0;
+      div {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.Nav-Main {
+  padding-bottom: 0px; }
+  .Nav-Main nav {
+    flex-direction: column; }
+    .Nav-Main nav .Logo {
+      font-size: 10px; }
+    .Nav-Main nav ul {
+      font-size: 10px;
+      justify-content: center; }
+  .Nav-Main main {
+    padding-bottom: 50px; }
+    .Nav-Main main .Scrooll-Down {
+      display: none; }
+    .Nav-Main main header h2 {
+      font-size: 30px; }
+    .Nav-Main main header p {
+      font-size: 15px; }
+    .Nav-Main main .Main-Info .Info-Primary h2 {
+      font-size: 25px; }
+    .Nav-Main main .Main-Info .Info-Secondary {
+      width: 280px; }
+
+section p {
+  font-size: 12px; }
+
+section h2 {
+  font-size: 30px; }
+
+section button {
+  font-size: 9px;
+  padding: 13px 25px; }
+
+footer .Footer-Primary {
+  width: 100%; }
+  footer .Footer-Primary .Footer-Primary-Logo-Input {
+    justify-content: space-around; }
+  footer .Footer-Primary .Footer-Primary-Location-Links {
+    justify-content: space-around; }
+  footer .Footer-Primary .Footer-Primary-Links-Social {
+    justify-content: space-around; }
+
+footer .Footer-Secondary {
+  font-size: 10px; }
+  footer .Footer-Secondary .Footer-Secondary-Last {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0; }
+    footer .Footer-Secondary .Footer-Secondary-Last div {
+      display: flex;
+      gap: 100px;
+      align-items: center; }

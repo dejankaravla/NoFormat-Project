@@ -1,0 +1,60 @@
+.Nav-Main {
+  padding-bottom: 180px;
+  nav {
+    padding: 10px;
+    ul {
+      gap: 20px;
+    }
+  }
+  main {
+    .Scrooll-Down {
+      left: 50px;
+    }
+    .Btn-Absolute {
+      right: 30px;
+    }
+    header {
+      h2 {
+        font-size: 70px;
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+    .Main-Info {
+      width: 85%;
+      justify-content: space-evenly;
+      .Info-Primary {
+        h2 {
+          font-size: 40px;
+          text-align: start;
+        }
+      }
+      .Info-Secondary {
+        width: 380px;
+      }
+    }
+  }
+}
+section {
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  button {
+    font-size: 10px;
+    padding: 15px 30px;
+  }
+}
+footer {
+  .Footer-Primary {
+    .Footer-Primary-Logo-Input {
+      justify-content: space-between;
+    }
+    .Footer-Primary-Location-Links {
+      justify-content: space-between;
+    }
+  }
+}

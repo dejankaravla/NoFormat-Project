@@ -1,0 +1,53 @@
+.Nav-Main {
+  padding-bottom: 180px;
+}
+.Nav-Main nav {
+  padding: 10px;
+}
+.Nav-Main nav ul {
+  gap: 20px;
+}
+.Nav-Main main .Scrooll-Down {
+  left: 50px;
+}
+.Nav-Main main .Btn-Absolute {
+  right: 30px;
+}
+.Nav-Main main header h2 {
+  font-size: 70px;
+}
+.Nav-Main main header p {
+  font-size: 23px;
+}
+.Nav-Main main .Main-Info {
+  width: 85%;
+  justify-content: space-evenly;
+}
+.Nav-Main main .Main-Info .Info-Primary h2 {
+  font-size: 40px;
+  text-align: start;
+}
+.Nav-Main main .Main-Info .Info-Secondary {
+  width: 380px;
+}
+
+section p {
+  font-size: 14px;
+}
+
+section h2 {
+  font-size: 40px;
+}
+
+section button {
+  font-size: 10px;
+  padding: 15px 30px;
+}
+
+footer .Footer-Primary .Footer-Primary-Logo-Input {
+  justify-content: space-between;
+}
+
+footer .Footer-Primary .Footer-Primary-Location-Links {
+  justify-content: space-between;
+}
