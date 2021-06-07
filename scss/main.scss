@@ -8,7 +8,7 @@ $fontRoboto: "Roboto", sans-serif;
 $fontPoppins: "Poppins", sans-serif;
 $fontTangerine: "Playball", cursive;
 
-// Animations
+// Transition
 $Transition: 0.4s ease-in-out;
 
 body {
@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
 }
 
+// Reusable Classes
 .Logo {
   line-height: 0;
   text-align: center;
@@ -38,6 +39,8 @@ body {
   border: none;
   color: white;
 }
+
+// CSS Structures
 .covid-alert {
   background-color: black;
   color: white;
@@ -92,6 +95,7 @@ body {
       .Login:hover {
         color: $colorRed;
         text-decoration: underline;
+        transform: translateY(-2px);
       }
     }
   }
@@ -113,11 +117,6 @@ body {
         width: 584px;
         height: 584px;
         animation: Animation3 25s infinite ease-in-out;
-      }
-      @keyframes Animation3 {
-        100% {
-          transform: rotateZ(360deg);
-        }
       }
     }
     .Scrooll-Down {
@@ -170,6 +169,7 @@ body {
       padding: 50px;
       position: relative;
       z-index: 1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
       .Info-Primary {
         h2 {
           font-size: 56px;
@@ -186,6 +186,7 @@ body {
           width: 50%;
           top: 250px;
           left: -80px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
         }
       }
       .Info-Secondary {
@@ -209,17 +210,6 @@ body {
             img {
               animation: Animation2 1.4s infinite ease-in-out;
             }
-            @keyframes Animation2 {
-              0% {
-                transform: translateX(-6px);
-              }
-              50% {
-                transform: translateX(6px);
-              }
-              100% {
-                transform: translateX(-5px);
-              }
-            }
           }
           button:hover {
             background: $colorHoverGreen;
@@ -235,6 +225,7 @@ section {
   text-align: center;
   line-height: 20px;
   padding: 50px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
   h2 {
     font-size: 56px;
   }
@@ -249,15 +240,6 @@ section {
   button:hover {
     background: $colorHoverGreen;
   }
-
-  @keyframes Animation1 {
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 }
 
 footer {
@@ -265,13 +247,13 @@ footer {
   color: white;
   font-size: 14px;
   .Footer-Primary {
-    width: 80%;
+    width: 60%;
     margin: auto;
     padding: 100px 0;
     .Footer-Primary-Logo-Input {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       padding-bottom: 80px;
       Form {
         display: flex;
@@ -307,12 +289,13 @@ footer {
     .Footer-Primary-Location-Links {
       display: flex;
       align-items: flex-start;
-      justify-content: space-evenly;
+      justify-content: space-between;
       .Footer-Primary-Location-Contact-Icon {
         display: flex;
         gap: 10px;
         i {
           padding-top: 7px;
+          animation: Animation4 4s infinite ease-in-out;
         }
         .Footer-Primary-Location-Contact {
           display: flex;
@@ -374,17 +357,63 @@ footer {
       background: white;
       width: 80%;
       margin: auto;
+      opacity: 30%;
     }
     .Footer-Secondary-Last {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       padding: 40px 0;
+      width: 65%;
+      margin: auto;
       div {
         display: flex;
-        gap: 100px;
+        gap: 150px;
         align-items: center;
       }
     }
+  }
+}
+
+// Animations
+@keyframes Animation1 {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes Animation2 {
+  0% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes Animation3 {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes Animation4 {
+  10% {
+    transform: translateY(-15px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0px);
   }
 }

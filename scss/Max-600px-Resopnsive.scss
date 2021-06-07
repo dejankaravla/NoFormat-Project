@@ -1,3 +1,4 @@
+// Responsive Max-Width: 600px
 .covid-alert {
   font-size: 8px;
 }
@@ -58,7 +59,7 @@
       }
       .Info-Secondary {
         width: 90%;
-        padding: 0 0px;
+        padding: 0px;
         text-align: justify;
         margin: auto;
         font-size: 10px;
@@ -123,5 +124,8 @@ footer {
     flex-direction: column;
     flex-flow: column-reverse;
     gap: 10px;
+    div {
+      gap: 20px !important;
+    }
   }
 }
